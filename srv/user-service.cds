@@ -14,4 +14,19 @@ service UserService
         modifiedAt,
         modifiedBy
     };
+
+    @odata.singleton
+    entity SingletonConfig as projection on kaztakata.Config
+    {
+        *
+    }
+    excluding
+    {
+        ID,
+        createdAt,
+        createdBy,
+        modifiedAt,
+        modifiedBy
+    };
 }
+

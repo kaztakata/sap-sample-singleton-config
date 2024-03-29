@@ -83,13 +83,7 @@
       "css": []
     },
     "routing": {
-      "config": {},
       "routes": [
-        {
-          "pattern": ":?query:",
-          "name": "ConfigList",
-          "target": "ConfigList"
-        },
         {
           "pattern": "Config({key}):?query:",
           "name": "ConfigObjectPage",
@@ -97,24 +91,6 @@
         }
       ],
       "targets": {
-        "ConfigList": {
-          "type": "Component",
-          "id": "ConfigList",
-          "name": "sap.fe.templates.ListReport",
-          "options": {
-            "settings": {
-              "contextPath": "/Config",
-              "variantManagement": "Page",
-              "navigation": {
-                "Config": {
-                  "detail": {
-                    "route": "ConfigObjectPage"
-                  }
-                }
-              }
-            }
-          }
-        },
         "ConfigObjectPage": {
           "type": "Component",
           "id": "ConfigObjectPage",

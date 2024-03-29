@@ -39,3 +39,7 @@ annotate service.Config with @(
         },
     ]
 );
+annotate service.Config with @(
+    UI.CreateHidden : true,
+    UI.DeleteHidden : true
+);
